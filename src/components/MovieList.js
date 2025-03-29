@@ -5,7 +5,7 @@ import useDebounce from '../hooks/useDebounce';
 
 function MovieList() {
   const dispatch = useDispatch();
-  const { movies, status, error } = useSelector((state) => state.movies);
+  const { movies, status } = useSelector((state) => state.movies);
   const [searchTerm, setSearchTerm] = useState('Pokemon'); // Başlangıçta 'Pokemon' olarak ayarla
   const [page, setPage] = useState(1);
 
